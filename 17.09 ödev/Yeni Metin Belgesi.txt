@@ -1,0 +1,59 @@
+Ödevler
+
+Not: yerleşimler için tablo yapısı kullanabilirsiniz
+
+Öğrenci Otomasyonu
+Bilgi: öğrencilerin ad, soyad, yaş, cinsiyet ve fotoğraf adresi bilgilerini tutalım fotoğrafları https://randomuser.me/photos adresinden sağ tıklayıp resmi yeni sekmede aç diyerek adres olarak alabilirsiniz.
+students isminde bir dizi oluşturup içinde objeler ile bu bilgileri önden kod içine yazabilirsiniz. en az 20 öğrenci olmalı
+v1
+- Tablo içinde öğrencilerimizi listeleyelim
+- Öğrencilerin fotoğraflarının altında adı soyadı, yaşı ve cinsiyeti yazsın.
+- Stillendirme ile uğraşmayın ve stil kısımlarını araştırmayın sadece gösterim olarak https://freefrontend.com/assets/img/bootstrap-profiles/bootstrap-profile-contacts.png bu şekilde düşünebilirsiniz
+v2
+- yeni öğrenci ekleyebilelim
+- prompt ile sıra sıra sorular sorabilirsiniz
+- eklenen öğrenci hem diziye hem html e eklenmeli
+- öğrenci ekle butonumuzdan ekleme işlemlerine başlayabilmeliyiz
+v3
+- öğrencileri listelerken sil butonu da ekleyelim
+- butona basınca "confirm" diyalog kutusunu kullanalım. bu kodu araştırın.
+- silinen öğrenci hem htmlden hem de diziden silinmeli
+- parentElement, parentNode kullanımlarını araştırın ve .remove()'u test edin.
+v4
+- öğrenci düzenleme ekleyelim.
+- sil butonu gibi düzenleme butonu olsun. düzenle butonuna basılınca tek tek sorular soralım 
+- değişiklikleri htmlde ve dizi üzerinde yapmalıyız
+v5
+- filtreleme özelliği ekleyelim
+- filtreleme için bir textbox eklemeliyiz. yanında ara butonu olmalı, yani form yapabiliriz
+- arama tuşuna basıldığında eğer öğrenci adı denk gelenler varsa ekranda sadece onlar olmalı
+- ara butonunun yanında bir de "sıfırla" butonu olmalı ve filtreyi iptal edip listelemeyi eski haline getirmeli
+- tüm html'i tekrar döngü ile oluşturmanız gerekiyor.
+- indexOf kullanarak yapabilirsiniz
+v6
+- localstorage desteği ekleyelim
+- eğer storage yoksa bizim öğrenci bilgilerini içeren students dizimizi localstorage'a yazıp, yine localstorage ı çağıralım
+- yazmanız gereken if şöyle if(!localStorage.students) { localStorage.students = JSON.stringify(students); }
+- sayfayı yüklediğimizde mutlaka localStorage'dan bilgi çekmiş olalım
+- yeni eklenenler ve düzenlenenler localStorage'a aktarmalı
+
+SOS Oyunu
+- 9 tane buton dizmelisiniz 3x3 şeklinde olmalı
+- Basit dinamik kodlar olması yerine karışık koşullar yazsanız da problem değil. Amaç sonuca ulaşmak.
+- Oyunda sıra sistemi olmalı. 1 oyuncu X diğer oyuncu O yapmalı
+- Oyun 2 kişi oynuyormuş gibi kurgulanmalı
+- Eğer yapabilirseniz bilgisayara karşı da yapabilirsiniz fakat en sona bırakın
+v2
+- skor sayısı tutulsun ve localstorage'da saklansın
+- yeniden oyna butonu ekleyelim
+
+Taş Kağıt Makas Oyunu
+- Oyun bilgisayara karşı oynanacak
+- 3 buton olsun. Oyuncu taş, kağıt veya makas seçsin
+- Bilgisayar ise rastgele seçeneklerden birini seçsin
+- Hangisi kazanırsa ekrana bilgi yazdıralım
+- Skor sayısı tutulsun ve localstorage'da saklansın
+- Math.floor(Math.random() * 3) kodu rastgele sayı üretmektedir. 0, 1 veya 2 döner
+
+4 İşlemli Hesap Makinesi
+- Bir input alanı ve rakamlar olan butonlar ile 4 işlem ve sonuç gösteren bir hesap makinesi geliştirin
